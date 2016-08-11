@@ -27,7 +27,7 @@ class CompanyService
     }
     
     /**
-     * Select a company
+     * Select a user
      */
     function getUser($userId) {
         $stmt = $this->database->query('SELECT * FROM users WHERE user_id=' . $userId);
