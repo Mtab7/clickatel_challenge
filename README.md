@@ -2,15 +2,21 @@ Php Specifics Questions and Answers
 =============================================
 
 Q: What is your favourite feature added to PHP since version 5.4 and how would you apply it in practice
+
 A: Introduction of Generators has made creating iterators much simpler than previously possible.
 Real life example will be parsing large sizes of CSV files that would not fit into memory once parsed or consume too much memory and prevent other requests from being served. Using generators eliminates the creation of arrays which easily consume memory. Reducing the memory consumed helps free resources to serve more requests and use the most out of your hardware. 
+
 Q: What is your framework of choice and what makes it great
+
 A: Laravel – It has an active and growing community that can provide quick support and answers, Laravel has a great way of handling and queuing long running tasks in the background. Queues are great for tasks like saving data where the user must not be blocked from continuing or wait for a process to finish before proceeding to the next step. Also failed jobs can be queued and re-executed in the background.
 
 Q: PHP has to load files and compile code on every request. What would be the best way to improve the
 performance of this step.
-The use of opcache - When an opcode cache is introduced, after a PHP script is interpreted and turned into opcode, it’s saved in shared memory, and subsequent requests will skip the parsing and compilation phases and leverage the opcode stored in memory, reducing the execution time of PHP. 
+
+A: The use of opcache - When an opcode cache is introduced, after a PHP script is interpreted and turned into opcode, it’s saved in shared memory, and subsequent requests will skip the parsing and compilation phases and leverage the opcode stored in memory, reducing the execution time of PHP. 
+
 Q: How do you test newly developed features
+
 A: Re-read the requirement specification, create positive and negative scenarios and cover all possible scenarios. Test the whole application in-case the feature produces side effects to other parts of the application. In an agile development environment all my tests at each stage will also involve the customer / business analyst and their feedback will be used to correct any errors. After doing this challenge I now know the importance of using unit testing during the development process.
 
 Instructions
