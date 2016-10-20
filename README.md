@@ -30,5 +30,3 @@ This should run the unit test file where 4 tests and 10 assertions should pass.
 
 4. Share results
 ================
-
-Once you have finished and everything works, please upload the code to your GitHub profile and send us the link for review.
